@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Basic Computer Skills Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    /* Specific styles for About & Guide Page */
+    .about-hero {
+      text-align: center;
+      padding: 30px 0 10px 0;
+    }
+
+    .about-card {
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .about-card h2 {
+      color: #1e40af;
+      font-size: 1.5rem;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .about-card p {
+      color: #334155;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    .guide-steps {
+      margin: 16px 0 0 20px;
+      color: #334155;
+    }
+
+    .guide-steps li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .badge-tag {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      margin-bottom: 10px;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      border-bottom: 1px solid #e2e8f0;
+      margin-bottom: 24px;
+    }
+
+    .nav-link {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header>
+    <div class="container">
+      <h1>🖥️ About This Project</h1>
+      <p>Digital Literacy for Rural School Classrooms</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-link">← Back to Lessons</a>
+      <span style="color: #64748b; font-size: 0.9rem;">Version 1.0 (Offline Ready)</span>
+    </nav>
+
+    <!-- Mission Section -->
+    <article class="about-card">
+      <span class="badge-tag">Our Mission</span>
+      <h2>🎯 Why We Built This</h2>
+      <p>
+        Many rural school students interact with computers for the very first time in school labs. Complex menus, English jargon, and heavy web applications can feel intimidating.
+      </p>
+      <p>
+        This portal provides an accessible, step-by-step foundation covering basic hardware, mouse precision, typing, and digital safety without requiring internet access, logins, or database setup.
+      </p>
+    </article>
+
+    <!-- Teacher / Instructor Guide -->
+    <article class="about-card">
+      <h2>👨‍🏫 Guide for Teachers & Volunteers</h2>
+      <p>Here is the recommended schedule to guide students through this curriculum:</p>
+      
+      <ol class="guide-steps">
+        <li><strong>Physical Inspection (Day 1):</strong> Let students press the CPU power button, trace the mouse cable, and turn on the monitor before opening any software.</li>
+        <li><strong>Mouse Precision (Day 2):</strong> Guide learners through Module 2 and the Practice Lab to master left-clicks and dragging.</li>
+        <li><strong>Folder Organization (Day 3):</strong> Have each student create a folder on the Desktop named with their Roll Number.</li>
+        <li><strong>Typing Exercise (Day 4):</strong> Instruct students to type 3 sentences about their village or favorite animal and save the document.</li>
+        <li><strong>Evaluation (Day 5):</strong> Open the final Quiz section on each computer or on a single teacher laptop to record scores via Google Forms.</li>
+      </ol>
+    </article>
+
+    <!-- Technical & Offline Setup -->
+    <article class="about-card">
+      <h2>⚙️ Offline Classroom Setup</h2>
+      <p>This entire platform is built with lightweight, zero-dependency HTML, CSS, and vanilla JavaScript:</p>
+      <ul class="guide-steps">
+        <li><strong>No Internet Required:</strong> Copy the project folder to each computer via a USB drive. Double-click <code>index.html</code> to run it in any browser (Chrome, Firefox, Edge).</li>
+        <li><strong>No Login Hassle:</strong> Students do not need email accounts or passwords to access the modules.</li>
+        <li><strong>Quiz Note:</strong> The final Google Form test requires an active internet connection only during submission.</li>
+      </ul>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Rural Digital Literacy Project • Free for non-commercial educational use</p>
+    </div>
+  </footer>
+
+</body>
+</html>

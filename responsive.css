@@ -1,0 +1,158 @@
+/* =======================================================
+   RESPONSIVE STYLESHEET FOR BASIC COMPUTER SKILLS PROJECT
+   Optimized for low-res school monitors, tablets & mobiles
+   ======================================================= */
+
+/* 1. Medium Screens / Laptops / Low-Resolution Lab Monitors (<= 992px) */
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 90%;
+    padding: 0 16px;
+  }
+
+  header h1 {
+    font-size: 2.1rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  .modules-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .quiz-card {
+    padding: 28px 20px;
+  }
+}
+
+/* 2. Tablets & Small Lab Displays (<= 768px) */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 30px 0;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+  }
+
+  /* Single-column stacked cards for clear readability */
+  .modules-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .module-card {
+    padding: 20px;
+  }
+
+  .module-icon {
+    font-size: 1.9rem;
+    margin-bottom: 8px;
+  }
+
+  .module-title {
+    font-size: 1.15rem;
+  }
+
+  .module-btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .info-banner {
+    font-size: 0.9rem;
+    padding: 12px 16px;
+  }
+
+  .quiz-card h2 {
+    font-size: 22px;
+  }
+
+  .quiz-btn {
+    font-size: 18px;
+    padding: 14px 28px;
+    width: 100%; /* Easy full-width tap target on touchscreens */
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* 3. Mobile Phones & Ultra-Compact Displays (<= 480px) */
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .modules-section {
+    padding: 20px 0;
+  }
+
+  .module-card {
+    padding: 16px;
+  }
+
+  .quiz-section {
+    padding: 24px 0 40px 0;
+  }
+
+  .quiz-card {
+    border-width: 2px;
+    padding: 20px 14px;
+  }
+
+  .quiz-badge {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  .quiz-info-list {
+    padding: 12px;
+  }
+
+  .quiz-info-list li {
+    font-size: 13.5px;
+  }
+
+  footer {
+    padding: 18px 0;
+    font-size: 0.8rem;
+  }
+}
+
+/* 4. Classroom Print View (For physical study worksheets) */
+@media print {
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  header, footer, .quiz-btn, .module-btn {
+    display: none;
+  }
+
+  .module-card, .about-card {
+    border: 1px solid #000000;
+    box-shadow: none;
+    page-break-inside: avoid;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 2: Mouse & Keyboard Skills</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    .lesson-card { background: #ffffff; border: 2px solid #e2e8f0; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+    .lesson-card h2 { color: #1e40af; font-size: 1.4rem; margin-bottom: 12px; }
+    .key-badge { display: inline-block; background: #e2e8f0; border: 1px solid #94a3b8; border-radius: 4px; padding: 2px 8px; font-weight: bold; font-family: monospace; }
+    .interactive-pad { background: #eff6ff; border: 2px dashed #3b82f6; border-radius: 8px; padding: 20px; text-align: center; margin-top: 12px; cursor: pointer; }
+    .nav-bar { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid #e2e8f0; margin-bottom: 24px; }
+    .nav-link { color: #2563eb; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🖱️ Module 2: Mouse & Keyboard Actions</h1>
+      <p>Master clicks, dragging, and the most important keyboard keys</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-link">← Back to Lessons</a>
+      <span style="color: #64748b; font-size: 0.9rem;">Module 2 of 6</span>
+    </nav>
+
+    <article class="lesson-card">
+      <h2>🖱️ Mouse Actions</h2>
+      <ul style="margin-left: 20px; color: #334155; line-height: 1.8;">
+        <li><strong>Left Click:</strong> Selects an item or places the text cursor.</li>
+        <li><strong>Double Left Click:</strong> Opens a file, folder, or application quickly.</li>
+        <li><strong>Right Click:</strong> Opens a menu with extra options (Copy, Delete, Properties).</li>
+        <li><strong>Drag & Drop:</strong> Hold down the left button, move the mouse, then release to move items.</li>
+      </ul>
+
+      <div class="interactive-pad" id="click-tester" onclick="testClick(event)" ondblclick="testDblClick(event)">
+        <span id="click-status" style="font-weight: bold; color: #1e40af; font-size: 1.1rem;">Click or Double-Click Here to Test!</span>
+      </div>
+    </article>
+
+    <article class="lesson-card">
+      <h2>⌨️ Key Keyboard Keys</h2>
+      <ul style="margin-left: 20px; color: #334155; line-height: 1.8;">
+        <li><span class="key-badge">Spacebar</span> Longest key at bottom; adds a space between words.</li>
+        <li><span class="key-badge">Enter ↵</span> Moves to the next line or confirms an action.</li>
+        <li><span class="key-badge">Backspace ⌫</span> Deletes the letter to the left of the cursor.</li>
+        <li><span class="key-badge">Caps Lock</span> Makes all typed letters CAPITAL (A, B, C).</li>
+      </ul>
+    </article>
+
+    <div style="text-align: center; margin: 32px 0;">
+      <button onclick="markModuleComplete('module-2-mouse-keys.html'); window.location.href='module-3-os-files.html';" class="module-btn" style="background-color: #16a34a; font-size: 1.1rem; padding: 12px 28px; cursor: pointer; border: none;">
+        Complete Lesson & Next ➜
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container"><p>Rural Digital Literacy Project • Module 2</p></div>
+  </footer>
+
+  <script>
+    function testClick(e) {
+      document.getElementById('click-status').textContent = '✓ Single Left Click Registered!';
+    }
+    function testDblClick(e) {
+      document.getElementById('click-status').textContent = '🎉 Double Click Success!';
+    }
+  </script>
+  <script src="progress.js"></script>
+</body>
+</html>
